@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contador</string>
+    <string name="ola_ke_ase">ola ke ase</string>
+    <string name="titulo">Contador</string>
+    <string name="hint">0</string>
+    <string name="contador">%1$d</string>
+    <string name="button">+</string>
+    <string name="button2">-</string>
+    <string name="reset">Reset</string>
+</resources>

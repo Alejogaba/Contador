@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/titulo"
+        android:textSize="36sp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:textSize="104sp"/>
+
+
+    <CheckBox
+        android:id="@+id/negativos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:textSize="24sp"
+        android:text="Permitir negativos"
+        android:onClick="negativos"/>
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="300dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:onClick="incrementar"
+            android:text="@string/button"
+            android:textSize="60sp" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.7
+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:onClick="decrementar"
+            android:text="@string/button2"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resets"
+        android:layout_width="300dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/botones"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="@string/reset"
+            android:textSize="24sp"
+            android:layout_marginEnd="24sp"/>
+
+        <EditText
+            android:id="@+id/set"
+            android:layout_width="72sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint"
+            android:textSize="24sp"
+            android:inputType="numberSigned"
+            android:cursorVisible="false"
+            android:importantForAutofill="no" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
